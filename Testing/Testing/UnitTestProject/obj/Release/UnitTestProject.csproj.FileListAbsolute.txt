@@ -1,0 +1,7 @@
+C:\Users\oleg5_000\Desktop\Testing\Testing\UnitTestProject\bin\Release\UnitTestProject.dll
+C:\Users\oleg5_000\Desktop\Testing\Testing\UnitTestProject\bin\Release\UnitTestProject.pdb
+C:\Users\oleg5_000\Desktop\Testing\Testing\UnitTestProject\bin\Release\Testing.exe
+C:\Users\oleg5_000\Desktop\Testing\Testing\UnitTestProject\bin\Release\Testing.pdb
+C:\Users\oleg5_000\Desktop\Testing\Testing\UnitTestProject\obj\Release\UnitTestProject.csprojResolveAssemblyReference.cache
+C:\Users\oleg5_000\Desktop\Testing\Testing\UnitTestProject\obj\Release\UnitTestProject.dll
+C:\Users\oleg5_000\Desktop\Testing\Testing\UnitTestProject\obj\Release\UnitTestProject.pdb

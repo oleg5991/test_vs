@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions;ValidateProjects">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore\*" Condition="'$(ImportByWildcardBeforeSolution)' != 'false' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore')" />
+  <Import Project="C:\Users\oleg5_000\Desktop\Testing\Testing\before.Testing.sln.targets" Condition="exists('C:\Users\oleg5_000\Desktop\Testing\Testing\before.Testing.sln.targets')" />
+  <PropertyGroup Condition=" '$(Configuration)' == '' ">
+    <Configuration>Debug</Configuration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == '' ">
+    <Platform>Any CPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(AspNetConfiguration)' == '') ">
+    <AspNetConfiguration>$(Configuration)</AspNetConfiguration>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SolutionDir>C:\Users\oleg5_000\Desktop\Testing\Testing\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>Testing.sln</SolutionFileName>
+    <SolutionName>Testing</SolutionName>
+    <SolutionPath>C:\Users\oleg5_000\Desktop\Testing\Testing\Testing.sln</SolutionPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' == '2.0'">v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and ('$(MSBuildToolsVersion)' == '3.5' or '$(MSBuildToolsVersion)' == '3.0')">v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and ('$(MSBuildToolsVersion)' == '4.0' or '$(MSBuildToolsVersion)' == '12.0')">v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{A6D1D500-2D0C-41F0-A7E6-1618E30B885F}" AbsolutePath="C:\Users\oleg5_000\Desktop\Testing\Testing\Testing\Testing.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{37D27BDA-D6BB-4A94-9F70-0517DBFB6AC4}" AbsolutePath="C:\Users\oleg5_000\Desktop\Testing\Testing\UnitTestProject\UnitTestProject.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <ItemGroup>
+    <SolutionConfiguration Include="Debug|Any CPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Any CPU</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{A6D1D500-2D0C-41F0-A7E6-1618E30B885F}" AbsolutePath="C:\Users\oleg5_000\Desktop\Testing\Testing\Testing\Testing.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{37D27BDA-D6BB-4A94-9F70-0517DBFB6AC4}" AbsolutePath="C:\Users\oleg5_000\Desktop\Testing\Testing\UnitTestProject\UnitTestProject.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+    <SolutionConfiguration Include="Release|Any CPU">
+      <Configuration>Release</Configuration>
+      <Platform>Any CPU</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{A6D1D500-2D0C-41F0-A7E6-1618E30B885F}" AbsolutePath="C:\Users\oleg5_000\Desktop\Testing\Testing\Testing\Testing.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{37D27BDA-D6BB-4A94-9F70-0517DBFB6AC4}" AbsolutePath="C:\Users\oleg5_000\Desktop\Testing\Testing\UnitTestProject\UnitTestProject.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+  </ItemGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{A6D1D500-2D0C-41F0-A7E6-1618E30B885F}" AbsolutePath="C:\Users\oleg5_000\Desktop\Testing\Testing\Testing\Testing.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{37D27BDA-D6BB-4A94-9F70-0517DBFB6AC4}" AbsolutePath="C:\Users\oleg5_000\Desktop\Testing\Testing\UnitTestProject\UnitTestProject.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter\*" Condition="'$(ImportByWildcardBeforeSolution)' != 'false' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter')" />
+  <Import Project="C:\Users\oleg5_000\Desktop\Testing\Testing\after.Testing.sln.targets" Condition="exists('C:\Users\oleg5_000\Desktop\Testing\Testing\after.Testing.sln.targets')" />
+  <Target Name="Build" />
+  <Target Name="Rebuild" />
+  <Target Name="Clean" />
+  <Target Name="Publish" />
+</Project>
